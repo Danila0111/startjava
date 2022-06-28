@@ -1,29 +1,28 @@
 public class Variables {   
     public static void main(String[] args) {
-        
-        byte b = -5;
-        short s = 42;
-        int i = 12_245;
-        long ln = 1_245_334_544;
-        float f = 3.141_592f;
-        double d = 3.145_592_653;
-        char c = 'Z';
-        boolean bo = true;
+        byte hhd = 2;
+        short seria = 42;
+        int soket = 1155;
+        long register = 124124L;
+        float proc = 12.345949f;
+        double capacity = 4323.45345;
+        char model = 'Z';
+        boolean ssd = true;
 
-        System.out.println(b);
-        System.out.println(s);
-        System.out.println(i);
-        System.out.println(ln);
-        System.out.println(f);
-        System.out.println(d);
-        System.out.println(c);
-        System.out.println(bo);
+        System.out.println(hhd);
+        System.out.println(seria);
+        System.out.println(model);
+        System.out.println(soket);
+        System.out.println(proc);
+        System.out.println(register);
+        System.out.println(capacity);
+        System.out.println(ssd);
 
-        int x = 100;
-        int y = 200;
-        int sum = x+y;
-        float sum2 = sum*89/100;
-        float sale = sum - sum*89/100;
+        int product_x = 100;
+        int product_y = 200;
+        int sum = product_x + product_y;
+        float sum2 = sum * 89 / 100;
+        float sale = sum - sum * 89 / 100;
 
         System.out.println("");
         System.out.println("Сумма товаров со скидкой: " + sum2);
@@ -35,49 +34,49 @@ public class Variables {
         System.out.println(" JJ  a     a  V  a     a");
         System.out.println("");
 
-        byte b1 = 127;
-        short s1 = 32_767;
-        int i1 = 2_147_483_647;
-        long ln1 = 2^63-1;
-        float f1 = 3.402823466e+38f;
-        double d1 = 1.7976931348623158e+308;
+        byte integers1 = 127;
+        short integers2 = 32_767;
+        int integers3 = 2_147_483_647;
+        long integers4 = 2^63-1;
+        float integers5 = 3.402823466e+38f;
+        double integers6 = 1.7976931348623158e+308;
 
-        float f2 = 3.402823466e+38f;
-        float f3 = 3.402823466e+37f;
-        System.out.println(f2);
-        System.out.println(f3);
+        float integers5_1 = 3.402823466e+38f;
+        float integers5_2 = 3.402823466e+37f;
+        System.out.println(integers5_1);
+        System.out.println(integers5_2);
 
-        float f4 = f3;
-        f3 = f2;
-        f2 = f4;
-        System.out.println(f2);
-        System.out.println(f3);  
+        float integers5_3 = integers5_2;
+        integers5_2 = integers5_1;
+        integers5_1 = integers5_3;
+        System.out.println(integers5_1);
+        System.out.println(integers5_2);
         System.out.println("");
 
-        int i61 = 35; 
-        int i62 = 38; 
-        int i63 = 64; 
-        int i64 = 94; 
-        int i65 = 95;
+        int variable1 = 35; 
+        int variable2 = 38; 
+        int variable3 = 64; 
+        int variable4 = 94; 
+        int variable5 = 95;
 
-        System.out.println(i61 + " = " + (char)i61);
-        System.out.println(i62 + " = " +(char)i62);
-        System.out.println(i63 + " = " +(char)i63);
-        System.out.println(i64 + " = " +(char)i64);
-        System.out.println(i65 + " = " +(char)i65);
+        System.out.println(variable1 + " = " + (char)variable1);
+        System.out.println(variable2 + " = " +(char)variable2);
+        System.out.println(variable3 + " = " +(char)variable3);
+        System.out.println(variable4 + " = " +(char)variable4);
+        System.out.println(variable5 + " = " +(char)variable5);
         System.out.println("");
 
-        int i7 = 345;
-        int i71 = i7/100;
-        int i72 = i7%100/10;
-        int i73 = i7%10;
+        int number = 345;
+        int hundreds = number / 100;
+        int dozens = number % 100 / 10;
+        int units = number % 10;
 
-        System.out.println(i7);
-        System.out.println(i71);
-        System.out.println(i72);
-        System.out.println(i73);
-        System.out.println(i71*i72*i73);
-        System.out.println(i71+i72+i73);
+        System.out.println(number);
+        System.out.println(hundreds);
+        System.out.println(dozens);
+        System.out.println(units);
+        System.out.println(hundreds*dozens*units);
+        System.out.println(hundreds+dozens+units);
         System.out.println("");
 
         char space = ' ';
@@ -95,21 +94,21 @@ public class Variables {
        // System.out.println(cl + down + down + down + down + cl + cr + down + down + cr + space + space + space);
          //System.out.println(cl + down + "");
 
-        int i9 = 123;
-        int i91 = i9/100;
-        int i92 = i9%100/10;
-        int i93 = i9%10;
-        System.out.println(i9);
-        System.out.println(i91);
-        System.out.println(i92);
-        System.out.println(i93);
+        int number2 = 123;
+        int hundreds2 = number2 / 100;
+        int dozens2 = number2 % 100 / 10;
+        int units2 = number2 % 10;
+        System.out.println(number2);
+        System.out.println(hundreds2);
+        System.out.println(dozens2);
+        System.out.println(units2);
 
-        long l10 = 86399;
-        long hour = l10/3600;
-        l10 = l10 - hour*3600;
-        long min = l10/60;
-        l10 = l10 - min*60;
-        System.out.println(hour + ":" + min + ":" + l10);
+        long seconds = 86399;
+        long hour = seconds / 3600;
+        seconds = seconds - hour * 3600;
+        long min = seconds / 60;
+        seconds = seconds - min * 60;
+        System.out.println(hour + ":" + min + ":" + seconds);
         System.out.println("");
     }
 }
