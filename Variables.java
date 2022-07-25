@@ -1,4 +1,4 @@
-public class Variables {   
+public class VariablesTheme {   
     public static void main(String[] args) {
         System.out.println("\n1. Создание переменных и вывод их значений на консоль");
         byte solidStateDriveCount = 1;
@@ -107,24 +107,6 @@ public class Variables {
         System.out.println("Произведение цифр числа " + srcNumber + " = " + prodDigits);
 
         System.out.println("\n8. Вывод на консоль ASCII-арт Дюка");
-        /*
-        // через String
-        String slash = "/";
-        String backslash = "\\";
-        String underline = "_";
-        String bracketOpen = "(";
-        String bracketClose = ")";
-        String space = " ";
-        System.out.println(space + space + space + space + slash + backslash);
-        System.out.println(space + space + space + slash + space + space + backslash);
-        System.out.println(space + space + slash + underline + bracketOpen + space + bracketClose +
-                backslash);
-        System.out.println(space + slash + space + space + space + space + space + space + backslash);
-        System.out.println(slash + underline + underline + underline + underline + slash +
-                backslash + underline + underline + backslash);
-        */
-
-        // через Char
         char slash = '/';
         char backslash = '\\';
         char underline = '_';
@@ -155,8 +137,8 @@ public class Variables {
         int minutes = totalSec % 3600 / 60;
         int seconds = totalSec % 60;
         System.out.println("Результат преобразования " + totalSec + " в формат ЧЧ:ММ:СС - " +
-            (hours / 10) + (hours % 10) + ":" +
-            (minutes / 10) + (minutes % 10) + ":" + 
-            (seconds / 10) + (seconds % 10));
+            hours + ":" +
+            minutes + ":" + 
+            seconds);
     }
 }
