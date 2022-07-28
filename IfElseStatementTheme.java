@@ -68,18 +68,17 @@ public class IfElseStatementTheme {
         boolean matchDigit3 = (number1 % 10) == (number2 % 10);
         // проверяем есть ли хоть одна одинаковая цифра
         if (!matchDigit1 && !matchDigit2 && !matchDigit3) {
-            System.out.print("В числах " + number1 + " и " + number2 + 
-                " нет одинаковых цифр в соответствующих разрядах");
+            System.out.print("В числах " + number1 + " и " + number2 + " нет одинаковых цифр в соответствующих разрядах");
         } else {
-            System.out.print("В числах " + number1 + " и " + number2 + " одинаковые цифры ");
+            System.out.println("В числах " + number1 + " и " + number2 + " одинаковые цифры ");
             if (matchDigit1) {
-                System.out.print("\n\t " + (number1 / 100) + " стоят в сотнях");
+                System.out.println((number1 / 100) + " стоят в сотнях");
             }
             if (matchDigit2) {
-                System.out.print("\n\t " + (number1 % 100 / 10) + " стоят в десятках");
+                System.out.println((number1 % 100 / 10) + " стоят в десятках");
             }
             if (matchDigit3) {
-                System.out.print("\n\t " + (number1 % 10) + " стоят в единицах");
+                System.out.println((number1 % 10) + " стоят в единицах");
             }
         }
 
