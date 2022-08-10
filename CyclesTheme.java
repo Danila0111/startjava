@@ -1,39 +1,42 @@
 public class CyclesTheme {
     public static void main(String[] args) {
         System.out.println("\n1. Подсчет суммы четных и нечетных чисел");
-        int sumEven = 0;
+        int x = -10;
         int sumOdd = 0;
-        for (int i = -10; i <= 21; i++) {
-            if (i % 2 == 0) {
-                sumEven += i;
+        int sumEven = 0;
+        do {
+            if (x % 2 == 0) {
+                sumOdd += x;
             } else {
-                sumOdd += i;
+                sumEven += x;
             }
-        }
-        System.out.format("в промежутке [-10, 21] сумма четных чисел = %d, а нечетных = %d%n",
-                sumEven, sumOdd);
+            x++;
+        } while (x < 22);
+        System.out.println("Сумма четных чисел = " + sumOdd);
+        System.out.println("Сумма нечетных чисел = " + sumEven);
 
-        System.out.println("\n2. Вывод чисел в интервале между (max и min)");
+        System.out.println("\n2. Вывод чисел между max и min");
         int number1 = 10;
         int number2 = 5;
         int number3 = -1;
-        int min;
-        int max;
-        if (number1 > number2) {
+        int max = 0;
+        if ((number1 > number2) && (number1 > number3)) {
             max = number1;
+        } else if ((number2 > number1) && (number2 > number3)) {
+            max = number2;
+        } else {
+            max = number3;
+        }
+        int min = 0;
+        if ((number1 < number2) && (number1 < number3)) {
+            min = number1;
+        } else if ((number2 < number1) && (number2 < number3)) {
             min = number2;
         } else {
-            max = number2;
-            min = number1;
-        }
-        if (number3 > max) {
-            max = number3;
-        } else if (number3 < min) {
             min = number3;
         }
-        System.out.format("числа в интервале (%d, %d):%n", max, min);
         for (int i = max - 1; i > min; i--) {
-            System.out.println(" " + i);
+            System.out.println(i);
         }
 
         System.out.println("\n3 Вывод реверсивного числа и суммы его цифр");
@@ -73,11 +76,9 @@ public class CyclesTheme {
             tmpNum /= 10;
         }
         if (countOne % 2 == 0) {
-            System.out.format("число %d содержит %d (четное) количество единиц%n",
-                    srcNum, countOne);
+            System.out.println("Количество единиц является четным");
         } else {
-            System.out.format("число %d содержит %d (нечетное) количество единиц%n",
-                    srcNum, countOne);
+            System.out.println("Количество единиц является нечетным");
         }
 
         System.out.println("\n6. Отображение фигур в консоли\n");
@@ -123,35 +124,28 @@ public class CyclesTheme {
             }
         } while (lineCounter <= 5);
 
+        //Отображение ASCII-символов
         System.out.println("\n7. Отображение ASCII-символов");
-        // TODO: разобраться как вывести символ, а не команду для первых 12 символов ASCII
-        System.out.println("символы, идущие до цифр и имеющие нечетные коды:");
-        System.out.println("  Dec  Char");
-        for (int i = 0; i <= 47; i++) {
-            if (i % 2 != 0) {
-                System.out.format("%5d     %c%n", i, (char) i);
-            }
+        System.out.println("Dec Char");
+        for (int i = 1; i != 49; i += 2) {
+            System.out.format("%-3d %-3c%n", i, i);
         }
-        System.out.println("\nмаленькие английские буквы, имеющие четные коды:");
-        System.out.println("  Dec  Char");
-        for (int i = 97; i <= 122; i++) {
-            if (i % 2 == 0) {
-                System.out.format("%5d     %c%n", i, (char) i);
-            }
+        for (int i = 97; i != 123; i = i + 2) {
+            System.out.format("%-3d %-3c%n", i, i);
         }
 
         System.out.println("\n8. Проверка, является ли число палиндромом");
         srcNum = 1234321;
         tmpNum = srcNum;
-        int controlNum = 0;
+        int reverceNum = 0;
         while (tmpNum > 0) {
-            controlNum = controlNum * 10 + tmpNum % 10;
+            reverceNum = reverceNum * 10 + tmpNum % 10;
             tmpNum /= 10;
         }
-        if (srcNum == controlNum) {
-            System.out.format("число %d является палиндромом%n", srcNum);
+        if (srcNum == reverceNum) {
+            System.out.println("Число 1234321 является палиндромом");
         } else {
-            System.out.format("число %d НЕ является палиндромом%n", srcNum);
+            System.out.println("Число 1234321 неявляется палиндромом");
         }
 
         System.out.println("\n9. Определение, является ли число счастливым");
