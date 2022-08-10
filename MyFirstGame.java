@@ -9,10 +9,10 @@ public class MyFirstGame {
         int endRange = 100;
         while (true) {
             if (playerNumber > randomNumber) {
-                System.out.format("Число %d больше того, что загадал компьютер%n", playerNumber);
+                System.out.println("Число " + playerNumber + " больше того, что загадал компьютер");
                 endRange = playerNumber - 1;
             } else if (playerNumber < randomNumber) {
-                System.out.format("Число %d меньше того, что загадал компьютер%n", playerNumber);
+                System.out.println("Число " + playerNumber + " меньше того, что загадал компьютер");
                 startRange = playerNumber + 1;
             } else {
                 break;
